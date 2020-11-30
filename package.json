@@ -1,24 +1,38 @@
 {
-  "name": "reactpro1",
-  "version": "1.0.0",
-  "description": "Test app",
-  "main": "index.html",
+  "name": "fenroot",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.11.6",
+    "@testing-library/react": "^11.2.2",
+    "@testing-library/user-event": "^12.2.2",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-scripts": "4.0.1",
+    "web-vitals": "^0.2.4"
+  },
   "scripts": {
-    "start":"npm run lite",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "lite": "lite-server"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/akverma00/ReactPro1.git"
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
   },
-  "author": "Arun Kumar Verma",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/akverma00/ReactPro1/issues"
-  },
-  "homepage": "https://github.com/akverma00/ReactPro1#readme",
-  "devDependencies": {
-    "lite-server": "^2.6.1"
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
